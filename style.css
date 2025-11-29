@@ -13,3 +13,10 @@ h  {
 p {
   text-size: 25px
 }
+
+/*-----------------LOGIN PAGE-----------------*/
+.login-container {
+  background: #7bbc86; /*Med Green*/
+  min-height: 100px;
+  flex: center;
+}
