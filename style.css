@@ -20,6 +20,8 @@ label {
   flex: left;
 }
 
+.link {
+  color: #568c5f /*Dark Green*/
 /*-----------------LOGIN PAGE-----------------*/
 .login-container {
   background: #7bbc86; /*Med Green*/
