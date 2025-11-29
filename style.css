@@ -5,3 +5,11 @@ body {
   background-size: cover;
   min-height: 100vh;
 }
+
+h  {
+  text-size: 50px
+}
+
+p {
+  text-size: 25px
+}
