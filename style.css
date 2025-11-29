@@ -27,3 +27,9 @@ p {
   box-shadow: 0 4px 15px #568c5f; /*Dark Green*/
   text-align: center;
 }
+
+.login-logo {
+  max-width: 460px;
+  margin: 10%;
+  flex: center;
+}
