@@ -16,6 +16,10 @@ p {
   text-size: 25px
 }
 
+label {
+  flex: left;
+}
+
 /*-----------------LOGIN PAGE-----------------*/
 .login-container {
   background: #7bbc86; /*Med Green*/
