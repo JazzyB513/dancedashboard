@@ -16,10 +16,6 @@ p {
   text-size: 25px
 }
 
-label {
-  flex: left;
-}
-
 .link {
   color: #568c5f /*Dark Green*/
 /*-----------------LOGIN PAGE-----------------*/
