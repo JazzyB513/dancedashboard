@@ -10,25 +10,21 @@
   
   <body>
     <div class="login-container">
-      <img src="images/whlogo.png" class="login-logo">
-      <p>Login</p>
-      <form action="#">
+      <img src="images/hblogo.png" class="login-logo">
         <div class="input-group">
           <label for="username">Username</label>
-          <input type="text" id="username" name="username" placeholder="Enter your Username" required>
+          <input type="text" class="field" id="username" name="username" required>
         </div>
         <div class="input-group">
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+          <input type="password" class="field" id="password" name="password" required>
         </div>
-        <button type="submit" id=loginButton class="button">Login</button>
-        <div>
+          <button type="submit" id=loginButton>Login</button>
+        <div class="login-links">
           <a href="#" id="forgotLink" class="link">Forgot Password</a>
           <a href="#" id="createLink" class="link">Create Account</a>
         </div>
-      </form>
     </div>
-    <script>
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
