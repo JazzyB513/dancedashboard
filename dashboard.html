@@ -6,24 +6,50 @@
     <title>Dashboard</title> 
     <link rel="stylesheet" href="style.css"> 
     <link rel="icon" type="image/png" href="brlogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
   </head> 
   
   <body>
-   <div class="dashboard">
-        <aside class="sidebar">
-            <img src="images/brlogo.png" class="sidebar-logo">
-            <ul>
-            <li class="sidebar-actions" data-page="home">Home</li>
-            <li class="sidebar-actions" data-page="account">Account</li>
-            <li class="sidebar-actions" data-page="payment">Payments</li>
-            <li class="sidebar-actions" data-page="notifications">Notifications</li>
-            <li class="sidebar-actions" data-page="messages">Messages</li>
-            <li class="sidebar-actions" data-page="practice">Practice</li>
-            <li class="sidebar-actions" data-page="calendar">Calendar</li>
-            <li class="sidebar-actions" data-page="memories">Memories</li>
-            </ul>
-        </aside>
-    </div>
-    <script src="dashboard.js"></script>
+      <!--SIDEBAR-->
+      <aside class="sidebar">
+          <img src="images/brlogo.png" class="sidebar-logo">
+          <ul>
+          <li class="sidebar-actions" id="homeButton">Home</li>
+          <li class="sidebar-actions" id="accountButton">Account</li>
+          <li class="sidebar-actions" id="paymentButton">Payments</li>
+          <li class="sidebar-actions" id="notificationButton">Notifications</li>
+          <li class="sidebar-actions" id="messageButton">Messages</li>
+          <li class="sidebar-actions" id="practiceButton">Practice</li>
+          <li class="sidebar-actions" id="calendarButton">Calendar</li>
+          <li class="sidebar-actions" id="memoryButton">Memories</li>
+          </ul>
+      </aside>
+      <!--HOME-->
+      <main class="main-content">
+        <div class="page-content">
+          <h1>Welcome!</h1>
+          <div class="preview-grid">
+            <div class="preview-spot" data-page="notifications">
+              <h3>Latest Notifications</h3>
+              <ul>
+                <li>All Caught Up!</li>
+              </ul>
+            </div>
+            <div class="preview-spot" data-page="practice">
+              <h3>Recent Videos</h3>
+              <ul>
+                <li>All Caught Up!</li>
+              </ul>
+            </div>
+            <div class="preview-spot" data-page="calendar">
+              <h3>Next Upcoming Event</h3>
+              <ul>
+                <li>No Upcoming Events!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    <script src="sidebar.js"></script>
   </body>
 </html>

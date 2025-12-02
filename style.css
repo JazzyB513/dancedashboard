@@ -1,4 +1,4 @@
-/*-----------------ALL PAGES-----------------*/
+/*-----------------MAIN-----------------*/
 html{
   height: 100%;
   margin: 0;
@@ -12,6 +12,9 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #d2e6d5;
+  height: 100%;
+  display: flex;
 }
 
 .link{
@@ -51,8 +54,13 @@ input:focus{
   box-shadow: none;
 }
 
+.main-content{
+  color:#2f5335;
+  font-size: 15px;
+  margin-left:50%
+}
 /*-----------------LOGIN PAGE-----------------*/
-.login-container{
+.login-container,.account-container{
   background: #edf4ee;
   padding: 40px;
   border-radius: 15px;
@@ -73,7 +81,7 @@ input:focus{
 .login-links{
   flex-direction: column;
   display: flex;
-  margin: 5px;
+  margin: 10px;
 }
 
 .input-group{
@@ -82,7 +90,7 @@ input:focus{
   padding: 10px;
   width: 80%;
   max-width: fit-content;
-  margin: 10px auto;
+  margin: 5px auto;
   flex-direction: column;
   display: flex;
   align-items:start;
@@ -116,7 +124,7 @@ input:focus{
   background-color: #edf4ee;
   max-width: 250px;
   width: auto;
-  position: relative;
+  position: fixed;
   border: radius 25%;
   color: #2f5335;
   height: 100%;
@@ -133,6 +141,8 @@ input:focus{
   flex-direction: column;
   display: flex;
   align-items: center;
+  line-height: 1.5;
+  font-size: 100%;
 }
 
 .sidebar-actions{
@@ -156,8 +166,53 @@ input:focus{
   border-radius: 100%;
 }
 
-/*-----------------DASHBOARD-----------------*/
-.dashboard{
-  background-color: #d2e6d5;
-  height: 100%;
+/*-----------------HOME-----------------*/
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 40px;
+  margin-top: 25px;
+}
+
+.preview-spot {
+  background-color:#edf4ee;
+  border-radius: 12px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.preview-spot:hover {
+  transform: translateY(-3px);
+  background-color:#dcefdf;
+}
+
+.preview-spot h3 {
+  margin-top: 0;
+  color: #2f5335;
+}
+
+.preview-spot ul {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.preview-spot ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/*-----------------NOTIFICATIONS-----------------*/
+.notification-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.notification {
+  background-color:#edf4ee;
+  border-radius: 12px;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
 }
